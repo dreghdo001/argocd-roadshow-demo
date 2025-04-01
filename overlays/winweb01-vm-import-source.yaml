@@ -4,4 +4,5 @@ metadata:
   name: winweb01-vm-import-source
 spec:
   source:
-    url: 'http://s3.us-east.cloud-object-storage.appdomain.cloud/roadshowocpvirt/winweb01.qcow2'
+    http:
+      url: 'http://s3.us-east.cloud-object-storage.appdomain.cloud/roadshowocpvirt/winweb01.qcow2'

@@ -4,4 +4,5 @@ metadata:
   name: database-vm-import-source
 spec:
   source:
-    url: 'http://s3.us-east.cloud-object-storage.appdomain.cloud/roadshowocpvirt/database.qcow2'
+    http:
+      url: 'http://s3.us-east.cloud-object-storage.appdomain.cloud/roadshowocpvirt/database.qcow2'
