@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cnv-gitops-vms
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: beehive-virtual-machines 
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: overlays
+    repoURL: https://github.com/cstaff14/argocd-roadshow-demo
+    targetRevision: main
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
