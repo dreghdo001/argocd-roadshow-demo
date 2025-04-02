@@ -1,4 +1,5 @@
 # Using OpenShift GitOps to Deploy VMs in OpenShift Virtualization
+This lab is based off a [Developer hub lab](https://developers.redhat.com/learning/learn:manage-openshift-virtual-machines-gitops/resource/resources:connect-and-configure-external-repository-argo-cd-virtual-machines)
 ## Lab Instructions
 1. Make a fork of this repo and make sure your fork is **public**
 2. In `overlays/kustomization.yaml` change the `namespace` value to `gitops-{your user}`
@@ -8,23 +9,27 @@ kind: Kustomization
 namespace: gitops-user6
 ...
 ```
-3. In your OpenShift console, create the `gitops-{your user}` project and give it the `argocd.argoproj.io/managed-by=openshift-gitops` label
-<!-- TODO: Images -->
+3. Log into the OpenShift web console, go to **Virtualization > Virtual Machines** from the left hand menu and select the `gitops-{your user}` project at the top of the screen
+  ![Step 3](images/step3.png)
 
-4. Open The AroCD Console
-- Click the grid in the top menu bar
-<!-- TODO: Images -->
-- Login via OpenShift
-<!-- TODO: Images -->
+4. Open The AroCD Console and log in
+- Click the grid in the top right menu bar and select Cluster ArgoCD
+  ![Step 4.1](images/step4-1.png)
+- Select login via OpenShift and enter your OpenShift username and password
+  ![Step 4.2](images/step4-2.png)
 - Enter your OpenShift username and password
-<!-- TODO: Images -->
+  ![Step 4.3](images/step4-3.png)
+On the next screen you will see all of the GitOps applications on the cluster. Feel free to explore but don't change any of the other applications
 
 5. Add your GitHub Respository as a repository
 - Go to Settings > Repositories
+  ![Step 5.1](images/step5-1.png)
 - Press Connect Repo
+  ![Step 5.2](images/step5-2.png)
 - Select VIA HTTPS
 - Enter your repos URL under Repository URL
-- Connect
+- Click Connect
+  ![Step 5.3](images/step5-3.png)
 
 6. Create a New App With the following info:
 - Application Name: **{your user}-gitops-vms**
