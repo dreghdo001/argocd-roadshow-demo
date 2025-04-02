@@ -20,3 +20,5 @@ nameReference:
   fieldSpecs:
     - kind: VirtualMachine
       path: metadata/labels/app
+
+# TODO Challenge: Add namereference for the services and route
