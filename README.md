@@ -56,5 +56,7 @@ On the next screen you will see all of the GitOps applications on the cluster. F
   ![Step 7.2](images/step7-2.png)
   ![Step 7.3](images/step7-3.png)
 
+8. Explore these VMs, PVCs, the Argo console or complete the challenges. When you are done **Please shut down your VMs to conserve resources on the cluster**
+
 ## Challenges
 ### Expose the application via services
