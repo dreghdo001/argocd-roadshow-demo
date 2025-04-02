@@ -49,6 +49,12 @@ On the next screen you will see all of the GitOps applications on the cluster. F
   ![Step 6.4](images/step6-4.png)
 
 7. Wait for resources to get provisioned and the application to be in a Synced state (this will take some time)
+  You will see a synced state in the Application pane:
+  ![Step 7.1](images/step7-1.png)
+
+  And running VMs in provisioned PVCs back in the OpenShift web console
+  ![Step 7.2](images/step7-2.png)
+  ![Step 7.3](images/step7-3.png)
 
 ## Challenges
 ### Expose the application via services
