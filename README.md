@@ -3,7 +3,7 @@ This lab is based off a [Developer hub lab](https://developers.redhat.com/learni
 
 ## Prereqs
 - Complete the **Migrating Existing Virtual Machines** section of the [Red Hat OpenShift Virtualization Roadshow](https://rhpds.github.io/openshift-virt-roadshow-cnv-multi-user/modules/module-02-mtv.html)
-- You must ave a GitHub account you can create public repositories from
+- You must have a GitHub account you can create public repositories from
 
 ## Lab Instructions
 1. Make a fork of this repo and make sure your fork is **public**
