@@ -21,4 +21,5 @@ nameReference:
     - kind: VirtualMachine
       path: metadata/labels/app
 
-# TODO Challenge: Add namereference for the services and route
+# TODO Challenge: Add namereference definitions for the services and route
+# NOTE: If the manifest of a running VM is updated, it will have to be restarted for the change to apply to the pods and VMIs

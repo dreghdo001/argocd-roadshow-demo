@@ -74,5 +74,3 @@ With the winweb service and route configured correclty, there should be a dev an
 
 **DEVELOPMENT IN PROGRESS** When the database service is properly configured, the prod and dev webapp routes will show this screen:
 ![Challenge 2](readme-images/challenge-2.png)
-
-<!-- TODO: describe and show what the finished product -->
