@@ -65,7 +65,8 @@ On the next screen you will see all of the GitOps applications on the cluster. F
 
 8. Explore these VMs, PVCs, the Argo console or complete the challenges. When you are done **Please shut down your VMs to conserve resources on the cluster**
 
-## Challenges
-### Complete the services and route definitions in the base directory as well as the dev and prod configs to expose the web application
+## Challenge
+Complete the services and route definitions in the base directory as well as the dev and prod configs to expose the web application
+Hint: complete the [Working with Virtual Machines and Applications](https://rhpds.github.io/openshift-virt-roadshow-cnv-multi-user/modules/module-08-workingvms.html) in the OCPV Roadshow to see how we would do this without GitOps. This will also generate Kubernetes manifests that can help you create the base manifests for these objects.
 
 <!-- TODO: describe and show what the finished product -->
