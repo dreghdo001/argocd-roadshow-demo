@@ -69,4 +69,10 @@ On the next screen you will see all of the GitOps applications on the cluster. F
 Complete the services and route definitions in the base directory as well as the dev and prod configs to expose the web application
 Hint: complete the [Working with Virtual Machines and Applications](https://rhpds.github.io/openshift-virt-roadshow-cnv-multi-user/modules/module-08-workingvms.html) in the OCPV Roadshow to see how we would do this without GitOps. This will also generate Kubernetes manifests that can help you create the base manifests for these objects.
 
+With the winweb service and route configured correclty, there should be a dev and prod route that produces this screen. This is currently the end of the challenge
+![Challenge 1](readme-images/challenge-1.png)
+
+**DEVELOPMENT IN PROGRESS** When the database service is properly configured, the prod and dev webapp routes will show this screen:
+![Challenge 2](readme-images/challenge-2.png)
+
 <!-- TODO: describe and show what the finished product -->
