@@ -1,5 +1,10 @@
 # Using OpenShift GitOps to Deploy VMs in OpenShift Virtualization
 This lab is based off a [Developer hub lab](https://developers.redhat.com/learning/learn:manage-openshift-virtual-machines-gitops/resource/resources:connect-and-configure-external-repository-argo-cd-virtual-machines)
+
+## Prereqs
+- Complete the **Migrating Existing Virtual Machines** section of the [Red Hat OpenShift Virtualization Roadshow](https://rhpds.github.io/openshift-virt-roadshow-cnv-multi-user/modules/module-02-mtv.html)
+- You must ave a GitHub account you can create public repositories from
+
 ## Lab Instructions
 1. Make a fork of this repo and make sure your fork is **public**
 2. In `overlays/kustomization.yaml` change the `namespace` value to `gitops-{your user}`
@@ -9,6 +14,7 @@ kind: Kustomization
 namespace: gitops-user6
 ...
 ```
+<!-- TODO: resize the images -->
 3. Log into the OpenShift web console, go to **Virtualization > Virtual Machines** from the left hand menu and select the `gitops-{your user}` project at the top of the screen
   ![Step 3](images/step3.png)
 
@@ -30,7 +36,7 @@ On the next screen you will see all of the GitOps applications on the cluster. F
 
   ![Step 5.2](images/step5-2.png)
 - Select VIA HTTPS
-- Enter your repos URL under Repository URL
+- Enter the **URL of the repository you created in step 1** under Repository URL
 - Click Connect
 
   ![Step 5.3](images/step5-3.png)
@@ -60,3 +66,5 @@ On the next screen you will see all of the GitOps applications on the cluster. F
 
 ## Challenges
 ### Complete the services and route definitions in the base directory as well as the dev and prod configs to expose the web application
+
+<!-- TODO: describe and show what the finished product -->
