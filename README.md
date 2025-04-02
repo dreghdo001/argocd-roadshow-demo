@@ -54,7 +54,7 @@ On the next screen you will see all of the GitOps applications on the cluster. F
 - Namespace: **gitops-user6**
   ![Step 6.4](images/step6-4.png)
 
-7. Wait for resources to get provisioned and the application to be in a Synced state (this will take some time)
+7. Click synchronize at the top of the screen and wait for resources to get provisioned and the application to be in a Synced state (this will take some time)
   You will see a synced state in the Application pane:
   ![Step 7.1](images/step7-1.png)
 
